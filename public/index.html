@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/systemjs@6.8.3/dist/system.min.js"></script>
+    <script type="systemjs-importmap">
+      {
+        "imports": {
+          "single-spa": "https://cdn.jsdelivr.net/npm/single-spa@5.9.0/lib/system/single-spa.min.js",
+          "vue": "https://cdn.jsdelivr.net/npm/vue"
+        }
+      }
+    </script>
+    <script>
+      function loadSingleSpa() {
+        System.import('vue').then((res) => {
+          console.log(res)
+        })
+      }
+      
+    </script>
+    <style>
+      .wrapper, .glass{
+        background-image: url('./img/car_body.webp');
+        background-repeat: no-repeat;
+      }
+
+      .glass{
+        height: 500px;
+        clip-path: inset(100px 100px);
+        filter: blur(10px)
+      }
+
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <div class="wrapper" style="height: 500px">
+        <div class="glass"></div>
+      </div>
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
