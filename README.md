@@ -6,6 +6,8 @@
 
 ![星系](readme-files/stars.jpg)  
 
+![人物动画](readme-files/animate.jpg)  
+
 ![分屏](readme-files/screen.jpg)   
 
 ![arrayCamera](readme-files/arrayCamera.jpg)  
