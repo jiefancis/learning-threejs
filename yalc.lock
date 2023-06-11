@@ -1,0 +1,10 @@
+{
+  "version": "v1",
+  "packages": {
+    "pnpm-vite-ui": {
+      "signature": "02f6ab383ecc9c6d0c2e01a653d9a1a6",
+      "file": true,
+      "replaced": "D:/大前端学习/从零搭建一个组件库/pnpm-vite-ui"
+    }
+  }
+}
